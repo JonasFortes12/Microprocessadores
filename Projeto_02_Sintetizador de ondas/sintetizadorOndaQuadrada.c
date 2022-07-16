@@ -21,7 +21,8 @@ void main(void) {
     while(1){ // loop principal
         
         Port = PORTD;
-        if(PORTD == 0)
+        
+		if(PORTD == 0)
             PORTBbits.RB0 = 0;
         else
             PORTBbits.RB0 ^= 1; //Operação de XOR
